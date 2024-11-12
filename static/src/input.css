@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+
+    :root {
+    --dark: "#000";
+    --light: "#fff";
+    }
+    body{
+        @apply font-poppins overflow-x-hidden bg-light text-dark;
+    }
+    .container{
+        @apply max-w-[1200px] w-full px-4 lg:px-[14rem] mx-auto;
+    }
+    h1{
+        @apply text-[70px];
+    }
+    h2{
+        @apply text-[33px];
+    }
+    h3{
+        @apply text-[24px];
+    }
+    h4{
+        @apply text-[16px];
+    }
+    h5{
+        @apply text-[12px];
+    }
+    h6{
+        @apply text-[10px];
+    }
+    p{
+        @apply text-[16px];
+    }
+}
+
+@layer components {
+    small {
+        @apply text-[16px] text-gray-400
+    }
+}
+
+
